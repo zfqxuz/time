@@ -25,16 +25,16 @@ def body(path):
             if dif1!=set():
                 for item in dif1:
                     name = item
-                if name[0]=="~":
-                    continue
-                namelist.insert(0,name)
-                print(f"{curr},新增了{name}")
+                    if name[0]=="~":
+                        continue
+                    namelist.insert(0,name)
+                    print(f"{curr},新增了{name}")
             if dif2!=set():
                 for item in dif2:
                     name=item
-                if name[0]=="~":
-                    continue
-                print(f"{curr},移除了{name}")
+                    if name[0]=="~":
+                        continue
+                    print(f"{curr},移除了{name}")
 
 def change(k):
     print(k)
